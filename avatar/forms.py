@@ -55,7 +55,8 @@ class PrimaryAvatarForm(forms.Form):
         super(PrimaryAvatarForm, self).__init__(*args, **kwargs)
         self.fields['choice'] = forms.ChoiceField(
             choices=[(c.id, avatar_img(c, size)) for c in avatars],
-            widget=widgets.RadioSelect)
+            widget=widgets.RadioSelect,
+            label=_('Choice'))
 
 class DeleteAvatarForm(forms.Form):
 
@@ -66,4 +67,5 @@ class DeleteAvatarForm(forms.Form):
         super(DeleteAvatarForm, self).__init__(*args, **kwargs)
         self.fields['choices'] = forms.MultipleChoiceField(
             choices=[(c.id, avatar_img(c, size)) for c in avatars],
-            widget=widgets.CheckboxSelectMultiple)
+            widget=widgets.CheckboxSelectMultiple,
+            label=_('Choices'))

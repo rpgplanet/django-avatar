@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-29 17:30+0200\n"
+"POT-Creation-Date: 2010-08-29 17:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,8 +22,7 @@ msgid ""
 "%(ext)s is an invalid file extension. Authorized extensions are : %"
 "(valid_exts_list)s"
 msgstr ""
-"%(ext)s je neplatný typ souboru. Platné formáty jsou : %"
-"(valid_exts_list)s"
+"%(ext)s je neplatný typ souboru. Platné formáty jsou : %(valid_exts_list)s"
 
 #: forms.py:38
 #, python-format
@@ -42,6 +41,14 @@ msgid ""
 msgstr ""
 "Již máte nahráno %(nb_avatars)d avatarů, maximální povolené množství je %"
 "(nb_max_avatars)d."
+
+#: forms.py:59
+msgid "Choice"
+msgstr "Možnosti"
+
+#: forms.py:71
+msgid "Choices"
+msgstr "Možnosti"
 
 #: models.py:75
 #, python-format
@@ -115,13 +122,14 @@ msgid ""
 "<a href=\"%(user_url)s\">%(avatar_creator)s</a> has updated their avatar <a "
 "href=\"%(avatar_url)s\">%(avatar)s</a>."
 msgstr ""
-"<a href=\"%(user_url)s\">%(avatar_creator)s</a> aktualizoval svého avatara <a "
-"href=\"%(avatar_url)s\">%(avatar)s</a>."
+"<a href=\"%(user_url)s\">%(avatar_creator)s</a> aktualizoval svého avatara "
+"<a href=\"%(avatar_url)s\">%(avatar)s</a>."
 
 #: templates/notification/avatar_updated/notice.html:2
 #, python-format
 msgid "You have updated your avatar <a href=\"%(avatar_url)s\">%(avatar)s</a>."
-msgstr "Aktualizoval jste svého avatara <a href=\"%(avatar_url)s\">%(avatar)s</a>."
+msgstr ""
+"Aktualizoval jste svého avatara <a href=\"%(avatar_url)s\">%(avatar)s</a>."
 
 #: templatetags/avatar_tags.py:44
 msgid "Default Avatar"
